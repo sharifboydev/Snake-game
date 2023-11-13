@@ -3,16 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Snake Game</title>
+    <style>
+        #p1 {
+            color: #000;
+            text-align: center;
+            font-size: 30px;
+            font-family: system-ui;
+        }
+
+        .game {
+            display: flex;
+            justify-content: center;
+        }
+
+        #canvas {
+            border: 1px solid #fff;
+            background-color: #324a5f;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <p id="p1"> Score: <span id="score"></span></p>
+    <div class="game">
+        <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
 
-
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
